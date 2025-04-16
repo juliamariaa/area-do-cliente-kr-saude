@@ -1,0 +1,688 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+/* Cores */
+:root {
+  --preto: #1D2225;
+  --branco: #fff;
+  --cinza: #77767B;
+  --azul-primario: #3871c2;
+  --verde: #0AC282;
+  --vermelho: #c21821;
+  --amarelo: #F6DC41;
+}
+
+/* Tags/Classes */
+body {
+  font-family: 'Assistant', serif !important;
+  z-index: 1;
+}
+
+#loading{
+  z-index: 2;
+  position: absolute;
+  left: 40%;
+  bottom: 50%;
+}
+
+#loading p{
+  color: var(--preto);
+  font-size: 14px;
+}
+
+.custom-spinner {
+  color: var(--azul-primario); 
+}
+
+.col,
+.row  {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold !important;
+}
+
+/* Página de  e recuperação de senha */
+main#login{
+  background-color: var(--azul-primario);
+  height: 100vh;
+}
+
+main#login .col{
+  max-width: 270px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+main#login label{
+  color: var(--branco);
+  margin-bottom: 4px;
+}
+
+main#login input{
+  background-color: var(--branco);
+  border-radius: 50px;
+  border: none;
+
+  height: 40px;
+  width: 270px;
+  padding-left: 15px;
+}
+
+main#login input:focus{
+  outline-color: var(--verde);
+}
+
+main#login .btn-acessar,
+main#login .btn-primeiro-acesso,
+section#pag-parceiros .selecionar-tipo-busca-container .tab-content #cidade .btn-pesquisar-cidade{
+  width: 270px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  color: var(--branco);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main#login .btn-acessar{
+  background-color: var(--verde);
+  margin: 24px 0 8px 0;
+}
+
+main#login .btn-acessar:hover,
+main#login .btn-acessar:active,
+main#login .btn-primeiro-acesso:hover,
+main#login .btn-primeiro-acesso:active{
+  transform: translateY(2px);
+}
+
+main#login .btn-primeiro-acesso{
+  background-color: transparent;
+}
+
+main.recuperacao-senha .col{
+  max-width: 360px !important;
+}
+
+main.recuperacao-senha .logo img{
+  margin: 0 auto !important;
+}
+
+main.recuperacao-senha h1{
+  color: var(--branco);
+  font-size: 24px;
+  text-align: center;
+}
+
+main.recuperacao-senha p{
+  text-align: center;
+  color: var(--branco);
+}
+
+/* Navbar mobile */
+nav#mobile .row {
+  background-color: var(--azul-primario);
+  padding: 16px 16px 40px !important;
+  z-index: 0;
+}
+
+nav#mobile .fixed-bottom{
+  padding: 40px 16px 16px !important;
+}
+
+nav#mobile p {
+  font-size: 10px;
+  color: var(--branco);
+  padding-top: 4px;
+}
+
+nav#mobile h2{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--branco);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav#mobile .btn-sair p {
+  font-weight: 700;
+}
+
+nav#mobile .nav-item p:hover,
+nav#mobile .nav-item.active p{
+  font-weight: bold;
+  color: var(--verde) !important;
+}
+
+/* Navbar desktop */
+nav#desktop {
+  height: 100vh;
+  width: 292px;
+  background-color: var(--azul-primario);
+}
+
+nav#desktop .logo {
+  padding: 32px 0 32px 32px;
+}
+
+nav#desktop .menu-lateral-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+nav#desktop .menu-lateral-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav#desktop .menu-lateral-container ul:first-of-type{
+  position: relative;
+  bottom: 100px !important;
+}
+
+nav#desktop .menu-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 292px;
+  height: 47px;
+  padding: 0 32px;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item.active{
+  background-color: #004085;
+  border-left: 4px solid #0ac282;
+}
+
+nav#desktop .menu-item a {
+  font-size: 16px;
+  color: var(--branco);
+}
+
+nav#desktop .btn-emergencia {
+  background-color: #c21821;
+  margin-top: auto;
+  transition: 1s;
+  border-left: none;
+  font-weight: 700;
+}
+
+nav#desktop .btn-emergencia a{
+  margin: 0 auto;
+}
+
+nav#desktop .btn-emergencia:hover {
+  background-color: #8d0a11;
+}
+
+/* Configuração padrão das páginas */
+section.inicio {
+  margin-top: 0 !important;
+  padding: 24px 15px !important;
+  position: absolute;
+  top: 70px;
+  bottom: 56px;
+  height: calc(100vh - 142px);
+  width: 100%;
+  overflow-y: auto;
+  z-index: 1;
+  border-radius: 30px;
+  background-color: #f0f4f9;
+}
+
+section.inicio .btn-sair-desktop,
+section.inicio .btn-voltar-desktop{
+  font-weight: bold;
+  color: var(--preto);
+}
+
+section.inicio h1 {
+  font-size: 32px;
+  color: #1d2225;
+}
+
+/* Página inicial */
+section#pag-inicial .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 48%;
+  height: 130px !important;
+
+  margin-top: 24px;
+  border-radius: 25px !important;
+  text-align: center;
+  font-size: 15px;
+  color: var(--branco) !important;
+}
+
+section#pag-inicial .card.pagamento {
+  background-color: #01a9ac;
+}
+
+section#pag-inicial .card.parceiros {
+  background-color: #fe9365;
+}
+
+section#pag-inicial .card.consulta-agendamentos {
+  background-color: #ff4a5b;
+}
+
+section#pag-inicial .card.guia-atendimento {
+  background-color: #004085;
+}
+
+section#pag-inicial .card.configuracao {
+  background-color: var(--azul-primario);
+}
+
+section#pag-inicial .btn-emergencia{
+  background-color: var(--vermelho);
+  color: var(--branco);
+  border-radius: 50px;
+  padding: 15px 40px;
+  text-align: center;
+}
+
+/* Página de pagamentos */
+section#pag-pagamentos .filtros-pagamento ul li{
+  background-color: var(--branco);
+  color: var(--cinza);
+  font-size: 10px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+section#pag-pagamentos .filtros-pagamento ul li.ativa{
+  background-color: var(--azul-primario);
+  color: var(--branco) !important;
+}
+
+section#pag-pagamentos .filtros-pagamento ul li:hover{
+  background-color: var(--azul-primario) !important;
+  color: var(--branco) !important;
+}
+
+section#pag-pagamentos .fatura,
+section#pag-pagamentos .pag-pagamento-fatura .codigo-fatura{
+  width: 100%;
+  max-width: 921px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--branco);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+section#pag-pagamentos .fatura .valor{
+  font-weight: bold;
+  color: var(--preto);
+}
+
+section#pag-pagamentos .fatura .vencimento{
+  font-size: 12px;
+  color: var(--cinza);
+}
+
+section#pag-pagamentos .btn-fatura,
+section#pag-pagamentos .btn-copiar-codigo{
+  background-color: var(--verde);
+  font-weight: 700;
+  text-align: center;
+  color: var(--branco);
+  padding: 6px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: block;
+  width: 100%;
+}
+
+section#pag-pagamentos .btn-fatura:hover{
+  background-color: #088f60;
+}
+
+section#pag-pagamentos .btn-pagar-fatura{
+  display: flex !important;
+  justify-content: center;
+  height: 32px;
+}
+
+section#pag-pagamentos .btn-pagar-fatura a{
+  text-align: center;
+}
+
+section#pag-pagamentos .btn-pagar-fatura:hover{
+  position: relative;
+  top: 2px;
+}
+
+section#pag-pagamentos .fatura .btn-fatura-paga{
+  background-color: transparent;
+  color: var(--cinza);
+  padding: 6px 18px;
+  text-align: center;
+}
+
+section#pag-pagamentos .aviso{
+  font-size: 10px;
+  color: var(--cinza);
+}
+
+/* Página pagamentos pendente */
+section#pag-pagamentos tr{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section#pag-pagamentos td.titulo{
+  color: var(--preto);
+  font-weight: 700;
+}
+
+section#pag-pagamentos td.valor{
+  color: var(--cinza);
+  padding-bottom: 24px;
+}
+
+section#pag-pagamentos td.descricao{
+  font-size: 14px;
+  color: var(--cinza);
+}
+
+/* Página pagamentos - fatura */
+section#pag-pagamentos .pag-pagamento-fatura .valor{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-pagamentos .pag-pagamento-fatura .descricao{
+  color: var(--cinza);
+}
+
+section#pag-pagamentos .pag-pagamento-fatura .codigo-fatura{
+  height: 150px;
+  font-size: 12px !important;
+  color: var(--cinza);
+}
+
+section#pag-pagamentos #btn-enviar-fatura-email{
+ background-color: #004085;
+}
+
+/* Página parceiros */
+section#pag-parceiros .btn-pesquisa{
+  background-color: var(--verde);
+  color: var(--branco);
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+}
+
+section#pag-parceiros .btn-pesquisa:active{
+  position: relative;
+  top: 2px;
+}
+
+section#pag-parceiros .resultado-pesquisa-container,
+section#pag-agendamentos .agendamentos-container,
+section#pag-guia-atendimentos .guia-atendimentos-container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section#pag-parceiros .resultado-pesquisa-container h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-parceiros .resultado-pesquisa,
+section#pag-agendamentos .consulta,
+section#pag-guia-atendimentos .guia{
+  background-color: var(--branco);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+section#pag-parceiros .resultado-pesquisa h3,
+section#pag-agendamentos .consulta h3,
+section#pag-guia-atendimentos .guia h3{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-parceiros .resultado-pesquisa span{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-parceiros .resultado-pesquisa p,
+section#pag-agendamentos .consulta p{
+  font-size: 12px;
+  color: var(--cinza);
+}
+
+section#pag-parceiros .btn-solicitar-atendimento,
+section#pag-guia-atendimentos .btn-baixar-guia{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--azul-primario);
+  padding-top: 16px;
+}
+
+/* Página parceiros - busca */
+section#pag-parceiros .selecionar-tipo-busca-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .nav{
+  --bs-nav-tabs-border-width: transparent;
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .nav-item button{
+  width: 100%;
+  padding: 6px 30px;
+  border-radius: 50px;
+  background-color: var(--branco);
+  color: var(--cinza);
+  text-align: center;
+}
+
+section#pag-parceiros .search-form {
+  width: 100%;
+  max-width: 960px;
+}
+
+section#pag-parceiros .input-container {
+  position: relative;
+  width: 100%;
+}
+
+section#pag-parceiros .search-input {
+  width: 100%;
+  max-width: 960px;
+  min-width: 266px;
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+section#pag-parceiros .btn-pesquisar {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+section#pag-parceiros .btn-pesquisar img {
+  width: 20px; 
+  height: 20px;
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .nav-item button:focus{
+  background-color: var(--azul-primario);
+  color: var(--branco);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container  .tab-content,
+section#pag-parceiros .selecionar-tipo-busca-container  input{
+  width: 100%;
+  max-width: 960px !important;
+  margin: 0 auto;
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container input{
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--cinza);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container  input:focus{
+  outline-color: var(--verde);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container  .tab-content #especialidade .ordem-alfabetica{
+  font-weight: 700;
+  color: var(--verde);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container  .tab-content #especialidade .resultado p,
+section#pag-parceiros .selecionar-tipo-busca-container  .tab-content #medico p{
+  margin: 24px 0;
+  color: var(--cinza);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .tab-content #cidade input{
+  padding-left: 10px;
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .tab-content #cidade .btn-pesquisar-cidade{
+  background-color: var(--verde); 
+  padding: 8px 16px;
+} 
+
+section#pag-parceiros .selecionar-tipo-busca-container .tab-content #cidade .resultado h3{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-parceiros .selecionar-tipo-busca-container .tab-content #cidade .resultado p{
+  background-color: var(--branco);
+  color: var(--cinza);
+  border-radius: 50px;
+  max-width: 256px;
+  padding: 8px 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Página agendamentos e Página guia de atendimentos */
+section#pag-agendamentos .consulta,
+section#pag-guia-atendimentos .guia{
+  padding: 0;
+}
+
+section#pag-agendamentos .consulta .titulo,
+section#pag-guia-atendimentos .guia .titulo{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section#pag-agendamentos .consulta.agendada .titulo,
+section#pag-guia-atendimentos .guia.aprovada .titulo{
+  background-color: #008F08;
+}
+
+section#pag-agendamentos .consulta.cancelada .titulo,
+section#pag-guia-atendimentos .guia.negada .titulo{
+  background-color: var(--vermelho);
+}
+
+section#pag-guia-atendimentos .guia.pendente .titulo{
+  background-color: var(--amarelo);
+}
+
+section#pag-agendamentos .consulta .titulo p,
+section#pag-guia-atendimentos .guia .titulo p{
+  color: var(--branco);
+  font-weight: 700;
+  padding: 10px;
+}
+
+/* Página de configurações */
+section#pag-configuracoes h2,
+section#pag-configuracoes h3{
+  font-weight: 700;
+  color: var(--preto);
+}
+
+section#pag-configuracoes h2{
+  font-size: 24px;
+}
+
+section#pag-configuracoes h3{
+  font-size: 18px;
+}
+
+section#pag-configuracoes label{
+  font-size: 14px;
+  margin: 16px auto 4px;
+  color: var(--cinza);
+}
+
+section#pag-configuracoes form{
+  max-width: 720px;
+}
+
+section#pag-configuracoes input{
+  height: 32px;
+  padding-left: 10px !important;
+  border-radius: 50px;
+  border: 1px solid var(--cinza);
+  max-width: 720px;
+  width: 100%;
+}
+
+section#pag-configuracoes .btn-editar-dados{
+  background-color: var(--azul-primario);
+  color: var(--branco);
+  font-weight: 700;
+  border-radius: 50px;
+  width: 100%;
+  padding: 8px 24px;
+}
+
+section#pag-configuracoes .btn-editar-dados:hover,
+section#pag-configuracoes .btn-editar-dados:active{
+  position: relative;
+  top: 2px;
+}

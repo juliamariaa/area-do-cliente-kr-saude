@@ -1,0 +1,102 @@
+@media screen and (min-width: 425px){
+
+  section#pag-pagamentos .filtros-pagamento ul li{
+    font-size: 15px;
+    padding: 6px 24px
+  }
+
+  section#pag-pagamentos .aviso{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #loading{
+    position: absolute;
+    left: 45%;
+    z-index: 2;
+  }
+
+  section#pag-pagamentos .btn-fatura,
+  section#pag-pagamentos .btn-copiar-codigo{
+    max-width: 300px;
+  }
+
+  section#pag-pagamentos .btn-pagar-fatura{
+    max-width: 160px;
+    padding: 6px 24px !important;
+  }
+
+  section#pag-pagamentos .pag-pagamento-fatura .codigo-fatura{
+    font-size: 24px !important;
+  }
+
+  section#pag-parceiros .resultado-pesquisa,
+  section#pag-agendamentos .consulta,
+  section#pag-guia-atendimentos .guia{
+    max-width: 306px;
+  }
+
+  section#pag-agendamentos .agendamentos-container,
+  section#pag-guia-atendimentos .guia-atendimentos-container{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  section#pag-parceiros .selecionar-tipo-busca-container .nav-item button{
+    max-width: 300px;
+    padding: 10px 30px;
+  }
+
+  section#pag-configuracoes .input-md{
+    width: 230px;
+  }
+
+  section#pag-configuracoes .btn-editar-dados{
+    width: 25%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  #loading{
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  section.inicio {
+    margin-left: 292px !important; 
+    height: 100vh;
+    width: calc(100% - 292px); 
+    border-radius: 0 !important;
+    top: 0;
+    bottom: 0;
+    overflow-y: none !important;
+  }
+
+  section#pag-inicial .btn-emergencia{
+    padding: 20px 60px;
+  }
+
+  section#pag-inicial .card img{
+    height: 50px;
+  }
+
+  section#pag-pagamentos .btn-fatura,
+  section#pag-pagamentos .btn-copiar-codigo{
+    padding: 6px 88px;
+  }
+
+  section#pag-pagamentos tr{
+    max-width: 300px;
+  }
+
+  section#pag-pagamentos td.descricao{
+    width: 900px !important;
+  }
+
+}
